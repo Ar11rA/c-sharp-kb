@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using QuoteFetcher.DTO;
+using QuoteFetcher.Enums;
 
 namespace QuoteFetcher.Services;
 
@@ -29,17 +31,20 @@ public static class LinqExample
             new Person
             {
                 Name = "Aritra",
-                City = "Jamshedpur"
+                City = "Jamshedpur",
+                Status = Status.Active
             },
             new Person
             {
                 Name = "Paridhi",
-                City = "Jamshedpur"
+                City = "Jamshedpur",
+                Status = Status.New
             },
             new Person
             {
                 Name = "Aritra",
-                City = "Bangalore"
+                City = "Bangalore",
+                Status = Status.Old
             }
         };
         Dictionary<string, List<Person>> groupedPeople = people
@@ -55,6 +60,7 @@ public static class LinqExample
         // Sort
         numbers.Sort((n1, n2) => n2 - n1);
         numbers.ForEach(Console.Write);
+        numbers.Skip(1).Take(2).ToList().ForEach(Console.Write);
         Console.WriteLine();
     }
 }
