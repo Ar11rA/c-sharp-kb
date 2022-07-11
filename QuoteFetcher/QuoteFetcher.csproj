@@ -7,5 +7,8 @@
         <Nullable>enable</Nullable>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
-
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\user-data.xml"/>
+        <EmbeddedResource Include="Resources\numbers.txt"/>
+    </ItemGroup>
 </Project>
