@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using QuoteFetcher.DTO;
 using QuoteFetcher.Enums;
 

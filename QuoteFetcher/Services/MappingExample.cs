@@ -16,7 +16,7 @@ public static class MappingExample
             Expense = 10000,
             Address = "New York"
         };
-        
+
         // adding address as ignore field
         UserOutput userOutput = new()
         {
@@ -29,9 +29,9 @@ public static class MappingExample
         Console.WriteLine(userOutput.Address);
         Console.WriteLine(userOutput.FullName);
         Console.WriteLine(userOutput.NetSaving);
-        
+
         // method 2
-        userOutput = new UserOutput()
+        userOutput = new UserOutput
         {
             Address = "California"
         };

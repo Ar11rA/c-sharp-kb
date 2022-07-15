@@ -8,10 +8,10 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
     <ItemGroup>
-        <EmbeddedResource Include="Resources\user-data.xml" />
-        <EmbeddedResource Include="Resources\numbers.txt" />
+        <EmbeddedResource Include="Resources\user-data.xml"/>
+        <EmbeddedResource Include="Resources\numbers.txt"/>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper" Version="11.0.1"/>
     </ItemGroup>
 </Project>
