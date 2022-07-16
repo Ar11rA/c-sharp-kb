@@ -25,7 +25,7 @@
     - Queue - https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
-  - QuoteService.cs - Custom -> Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name..
+  - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.
   - RootThreshold.cs - HR Tag 724559
   - TopArticles.cs - HR Tag 1137670
   - MedicalRecords.cs - HR Tag 724357
