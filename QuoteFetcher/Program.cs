@@ -21,6 +21,7 @@ static void Main()
     List<int> filteredRecords = MedicalRecords
         .FilterRecordsIdsByAgeAndBp(28, 31, 13).GetAwaiter().GetResult();
     Console.WriteLine("Number of filtered medical records:" + filteredRecords.Count);
+    RelevantFoodOutlet.CollateAffordableOutlets("Seattle", 135).GetAwaiter().GetResult().ForEach(Console.WriteLine);
     Console.WriteLine("******************************************************************************");
     
     // CP
