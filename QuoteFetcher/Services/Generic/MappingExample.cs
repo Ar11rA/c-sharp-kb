@@ -2,7 +2,7 @@ using AutoMapper;
 using QuoteFetcher.Config;
 using QuoteFetcher.DTO.MapperExample;
 
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Generic;
 
 public static class MappingExample
 {

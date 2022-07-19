@@ -1,7 +1,7 @@
 using QuoteFetcher.DTO;
 using QuoteFetcher.Enums;
 
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Generic;
 
 public static class LinqExample
 {

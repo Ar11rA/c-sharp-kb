@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Math;
 
 public static class PrimeFactor
 {

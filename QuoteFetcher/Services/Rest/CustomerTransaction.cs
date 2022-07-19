@@ -1,7 +1,7 @@
 using System.Text.Json;
 using QuoteFetcher.DTO;
 
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Rest;
 
 public class CustomerTransaction
 {

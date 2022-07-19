@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.DSA;
 
 public static class DSAExamples
 {

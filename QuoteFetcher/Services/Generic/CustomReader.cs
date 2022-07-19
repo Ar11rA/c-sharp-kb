@@ -3,7 +3,7 @@ using System.Text;
 using System.Xml.Serialization;
 using QuoteFetcher.DTO;
 
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Generic;
 
 public static class CustomReader
 {

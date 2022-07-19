@@ -1,5 +1,14 @@
 ﻿using QuoteFetcher.DTO;
-using QuoteFetcher.Services;
+using QuoteFetcher.Services.Array;
+using QuoteFetcher.Services.BinarySearch;
+using QuoteFetcher.Services.DPRecursion;
+using QuoteFetcher.Services.DSA;
+using QuoteFetcher.Services.Generic;
+using QuoteFetcher.Services.HashMap;
+using QuoteFetcher.Services.Math;
+using QuoteFetcher.Services.Rest;
+using QuoteFetcher.Services.String;
+using QuoteFetcher.Services.Tree;
 
 static void Main()
 {

@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.HashMap;
 
 public static class TwoSum
 {

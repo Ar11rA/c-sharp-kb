@@ -1,6 +1,6 @@
 using QuoteFetcher.DTO;
 
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Tree;
 
 public static class TreeTraversal
 {

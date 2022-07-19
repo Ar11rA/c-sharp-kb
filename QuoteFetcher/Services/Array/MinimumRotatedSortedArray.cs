@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.Array;
 
 public static class MinimumRotatedSortedArray
 {

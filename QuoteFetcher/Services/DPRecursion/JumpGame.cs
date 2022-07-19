@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.DPRecursion;
 
 public static class JumpGame
 {

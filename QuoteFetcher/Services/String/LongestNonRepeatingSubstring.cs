@@ -1,4 +1,4 @@
-namespace QuoteFetcher.Services;
+namespace QuoteFetcher.Services.String;
 
 public static class LongestNonRepeatingSubstring
 {
