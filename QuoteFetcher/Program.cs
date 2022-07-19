@@ -115,6 +115,15 @@ static void Main()
     
     Console.WriteLine();
     
+    ListNode rotated = LinkedListExamples.RotateList(
+        new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))), 2);
+    while (rotated != null)
+    {
+        Console.Write(rotated.Val);
+        rotated = rotated.Next;
+    }
+    Console.WriteLine();
+
     Console.WriteLine(DSAExamples.ValidateParenthesis("{{}}"));
     Console.WriteLine(DSAExamples.ValidateParenthesis("({)}"));
     Console.WriteLine(DSAExamples.CountStudents(new List<int> {1, 1, 0, 0}, new List<int> {0, 1, 0, 1}));
@@ -140,7 +149,17 @@ static void Main()
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("pwwkew"));
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring(" "));
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("dvdf"));
-
+    
+    List<List<int>> triangle = PascalTriangle.Generate(6);
+    triangle.ForEach(ut =>
+    {
+        ut.ForEach(lt =>
+        {
+            Console.Write(lt + " ");
+        });
+        Console.WriteLine();
+    });
+    
     Console.WriteLine("******************************************************************************");
 }
 

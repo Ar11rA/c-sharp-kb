@@ -111,4 +111,33 @@ public static class LinkedListExamples
         temp.Next = l1 ?? l2;
         return result.Next;
     }
+
+    public static ListNode RotateList(ListNode? head, int k)
+    {
+        int len = 0;
+        ListNode? curr = head;
+        while (curr != null)
+        {
+            curr = curr.Next;
+            len++;
+        }
+        
+        ListNode? prev = head;
+        curr = head;
+        for (int index = 0; index < (len - k); index++)
+        {
+            prev = curr;
+            curr = curr.Next;
+        }
+
+        ListNode result = curr;
+        prev.Next = null;
+        while (curr.Next != null)
+        {
+            curr = curr.Next;
+        }
+
+        curr.Next = head;
+        return result;
+    }
 }

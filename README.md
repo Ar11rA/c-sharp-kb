@@ -18,6 +18,7 @@
     - Add 2 lists - https://leetcode.com/problems/add-two-numbers/
     - Detect cycle - https://leetcode.com/problems/linked-list-cycle/
     - Remove nth node from end - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+    - Rotate linked list - https://leetcode.com/problems/rotate-list/
   - MinimumRotatedSortedArray.cs - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
   - SpiralMatrix.cs - https://leetcode.com/problems/spiral-matrix/
   - DSAExamples.cs
