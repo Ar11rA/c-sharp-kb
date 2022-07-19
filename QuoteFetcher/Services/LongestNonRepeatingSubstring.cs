@@ -1,9 +1,10 @@
 namespace QuoteFetcher.Services;
+
 public static class LongestNonRepeatingSubstring
 {
     public static int FindSubstring(string s)
     {
-        Dictionary<char, int> characterPresence = new ();
+        Dictionary<char, int> characterPresence = new();
         int result = 0;
         for (int i = 0; i < s.Length; i++)
         {
@@ -18,6 +19,7 @@ public static class LongestNonRepeatingSubstring
                 characterPresence.Add(s[i], i);
             }
         }
+
         return characterPresence.Count > result ? characterPresence.Count : result;
     }
 }

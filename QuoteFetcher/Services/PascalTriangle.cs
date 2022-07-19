@@ -10,7 +10,8 @@ public static class PascalTriangle
         {
             return triangle;
         }
-        triangle.Add(new List<int>{1,1});
+
+        triangle.Add(new List<int> {1, 1});
         if (numRows == 2)
         {
             return triangle;
@@ -21,8 +22,9 @@ public static class PascalTriangle
             List<int> temp = new() {1};
             for (int j = 2; j <= i; j++)
             {
-                temp.Add(triangle[i-1][j-2] + triangle[i-1][j-1]);
+                temp.Add(triangle[i - 1][j - 2] + triangle[i - 1][j - 1]);
             }
+
             temp.Add(1);
             triangle.Add(temp);
         }

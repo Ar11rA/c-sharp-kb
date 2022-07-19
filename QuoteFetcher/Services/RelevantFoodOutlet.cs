@@ -12,7 +12,7 @@ public static class RelevantFoodOutlet
         List<string> results = new();
         while (true)
         {
-            string url = 
+            string url =
                 $"https://jsonmock.hackerrank.com/api/food_outlets?city={city}&page={page}";
             string jsonContent = await client.GetStringAsync(url);
             FoodOutletData? response = JsonSerializer.Deserialize<FoodOutletData>(jsonContent);
@@ -20,7 +20,7 @@ public static class RelevantFoodOutlet
             {
                 continue;
             }
-            
+
             page++;
             results.AddRange(response.Data
                 .Where(outlet => outlet.CostForTwo <= threshold)

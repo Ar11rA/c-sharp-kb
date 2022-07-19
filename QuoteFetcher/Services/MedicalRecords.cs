@@ -20,15 +20,17 @@ public static class MedicalRecords
             {
                 break;
             }
+
             matchedIds.AddRange(response.Data.Aggregate(new List<int>(), (acc, curr) =>
             {
                 DateTime today = DateTime.Today;
                 int userAge = today.Year - DateTime.ParseExact(curr.UserDateOfBirth, "dd-MM-yyyy", null).Year;
-                if ((userAge >= startAge && userAge <= endAge) && (bpDiff >= (
-                        curr.Vitals.BloodPressureDiastole - curr.Vitals.BloodPressureSystole)))
+                if (userAge >= startAge && userAge <= endAge &&
+                    bpDiff >= curr.Vitals.BloodPressureDiastole - curr.Vitals.BloodPressureSystole)
                 {
                     acc.Add(curr.Id);
                 }
+
                 return acc;
             }));
             page++;

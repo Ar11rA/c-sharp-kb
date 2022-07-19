@@ -121,10 +121,21 @@ public static class LinkedListExamples
             curr = curr.Next;
             len++;
         }
-        
+
+        if (len <= 1)
+        {
+            return head;
+        }
+
+        k %= len;
+        if (k == 0)
+        {
+            return head;
+        }
+
         ListNode? prev = head;
         curr = head;
-        for (int index = 0; index < (len - k); index++)
+        for (int index = 0; index < len - k; index++)
         {
             prev = curr;
             curr = curr.Next;
