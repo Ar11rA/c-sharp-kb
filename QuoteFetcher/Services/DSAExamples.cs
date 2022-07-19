@@ -68,4 +68,30 @@ public static class DSAExamples
 
         return studentPreferences.Count;
     }
+    
+    //https://leetcode.com/problems/top-k-frequent-elements
+    public static List<int> TopKFrequent(List<int> numbers, int k)
+    {
+        // Hints: Comparator Syntax (Comparer<ObjectB>.Create((x, y) => x.Something.CompareTo(y.Something));
+        PriorityQueue<int, int> frequencyPriorityQueue = new(Comparer<int>.Create((x, y) => y - x));
+        Dictionary<int, int> frequencyMap = numbers.Aggregate(new Dictionary<int, int>(), (acc, curr) =>
+        {
+            if (acc.ContainsKey(curr))
+            {
+                acc[curr] += 1;
+            }
+            else
+            {
+                acc[curr] = 1;
+            }
+
+            return acc;
+        });
+        foreach ((int key, int value) in frequencyMap)
+        {
+            frequencyPriorityQueue.Enqueue(key, value);
+        }
+
+        return Enumerable.Range(1, k).Select(_ => frequencyPriorityQueue.Dequeue()).ToList();
+    }
 }

@@ -119,6 +119,7 @@ static void Main()
     Console.WriteLine(DSAExamples.ValidateParenthesis("({)}"));
     Console.WriteLine(DSAExamples.CountStudents(new List<int> {1, 1, 0, 0}, new List<int> {0, 1, 0, 1}));
     Console.WriteLine(DSAExamples.CountStudents(new List<int> {1, 1, 1, 0, 0, 1}, new List<int> {1, 0, 0, 0, 1, 1}));
+    DSAExamples.TopKFrequent(new List<int> {1,1,1,2,2,3}, 2).ForEach(Console.WriteLine);
     
     List<List<string>> groupedAnagrams = GroupAnagrams.Run(new List<string> {"eat", "tea", "tan", "ate", "nat", "bat"});
     foreach (List<string> groupedAnagram in groupedAnagrams)
@@ -134,6 +135,12 @@ static void Main()
     });
     spiral.ForEach(Console.Write);
     Console.WriteLine();
+    Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("abcabcbb"));
+    Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("bbbbb"));
+    Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("pwwkew"));
+    Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring(" "));
+    Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("dvdf"));
+
     Console.WriteLine("******************************************************************************");
 }
 

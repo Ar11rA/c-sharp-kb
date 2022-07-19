@@ -23,6 +23,8 @@
   - DSAExamples.cs
     - Stack - https://leetcode.com/problems/valid-parentheses/
     - Queue - https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
+    - Priority Queue / Heap - https://leetcode.com/problems/top-k-frequent-elements/
+  - LongestNonRepeatingSubstring.cs - https://leetcode.com/problems/longest-substring-without-repeating-characters
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.
