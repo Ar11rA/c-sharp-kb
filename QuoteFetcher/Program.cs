@@ -73,10 +73,14 @@ static void Main()
     Console.WriteLine(CountPairs.getDistinctPairCount(new List<int> {1, 1, 1, 2, 2, 3}, 1));
     Console.WriteLine(CountPairs.getDistinctPairCount(new List<int> {1, 2, 3, 4, 5, 6}, 2));
 
-    Console.WriteLine(JumpGame.CanJump(new List<int> {2, 3, 1, 1, 4}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {3, 2, 1, 0, 4}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 2, 0, 3, 0, 0}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 0, 2}));
+    Console.WriteLine(JumpGame.CanJump(new List<int> {2, 3, 1, 1, 4}) + " " +
+                      JumpGame.CountMinJumps(new List<int> {2, 3, 1, 1, 4}));
+    Console.WriteLine(JumpGame.CanJump(new List<int> {3, 2, 1, 0, 4}) + " " +
+                      JumpGame.CountMinJumps(new List<int> {3, 2, 1, 0, 4}));
+    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 2, 0, 3, 0, 0}) + " " +
+                      JumpGame.CountMinJumps(new List<int> {1, 2, 0, 3, 0, 0}));
+    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 0, 2} )+ " " +
+                      JumpGame.CountMinJumps(new List<int> {1, 0, 2}));
 
     PrimeFactor.GetFactors(25).ForEach(Console.WriteLine);
     Console.WriteLine();
@@ -167,6 +171,9 @@ static void Main()
         Console.WriteLine();
     });
 
+    Console.WriteLine(Stairs.Climb(3));
+    Console.WriteLine(Stairs.Tribonacci(4));
+    Console.WriteLine(Stairs.MinCost(new List<int> {10, 15, 20}));
     Console.WriteLine("******************************************************************************");
 }
 

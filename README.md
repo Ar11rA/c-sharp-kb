@@ -9,7 +9,14 @@
   - TreeTraversal.cs - https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/
     - DFS
     - BFS
-  - JumpGame.cs - https://leetcode.com/problems/two-sum/ 
+  - DP
+    - JumpGame.cs - 
+      - Check if jump possible - https://leetcode.com/problems/jump-game/
+      - Min Jumps - https://leetcode.com/problems/jump-game-ii
+    - Stairs.cs
+      - Min cost - https://leetcode.com/problems/min-cost-climbing-stairs/
+      - Climbing stairs - https://leetcode.com/problems/climbing-stairs/
+      - Nth Tribonacci - https://leetcode.com/problems/n-th-tribonacci-number/
   - TwoSum.cs - https://leetcode.com/problems/two-sum/
   - PrimeFactor.cs - https://leetcode.com/problems/2-keys-keyboard
   - KokoEatingBananas.cs - https://leetcode.com/problems/koko-eating-bananas/
