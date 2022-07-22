@@ -151,4 +151,27 @@ public static class LinkedListExamples
         curr.Next = head;
         return result;
     }
+
+    public static bool IsPalindrome(ListNode head)
+    {
+        Stack<int> list = new();
+        ListNode temp = head;
+        while (temp != null)
+        {
+            list.Push(temp.Val);
+            temp = temp.Next;
+        }
+
+        while (head != null)
+        {
+            if (head.Val != list.Pop())
+            {
+                return false;
+            }
+
+            head = head.Next;
+        }
+
+        return true;
+    }
 }

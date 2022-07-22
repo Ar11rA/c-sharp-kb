@@ -1,12 +1,11 @@
 namespace QuoteFetcher.Services.String;
 
-using System;
 public static class GroupAnagrams
 {
     private static string SortString(string input)
     {
         char[] characters = input.ToArray();
-        Array.Sort(characters);
+        System.Array.Sort(characters);
         return new string(characters);
     }
 

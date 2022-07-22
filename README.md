@@ -26,6 +26,7 @@
     - Detect cycle - https://leetcode.com/problems/linked-list-cycle/
     - Remove nth node from end - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
     - Rotate linked list - https://leetcode.com/problems/rotate-list/
+    - IsPalindrome - https://leetcode.com/problems/palindrome-linked-list/
   - MinimumRotatedSortedArray.cs - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
   - SpiralMatrix.cs - https://leetcode.com/problems/spiral-matrix/
   - DSAExamples.cs
@@ -33,6 +34,9 @@
     - Queue - https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
     - Priority Queue / Heap - https://leetcode.com/problems/top-k-frequent-elements/
   - LongestNonRepeatingSubstring.cs - https://leetcode.com/problems/longest-substring-without-repeating-characters
+  - Palindrome.cs
+    - https://leetcode.com/problems/palindrome-number/
+    - https://leetcode.com/problems/find-palindrome-with-fixed-length/
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.

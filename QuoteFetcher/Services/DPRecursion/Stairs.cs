@@ -1,7 +1,5 @@
 namespace QuoteFetcher.Services.DPRecursion;
 
-using System;
-
 public static class Stairs
 {
     public static int Climb(int n)
@@ -17,7 +15,7 @@ public static class Stairs
     public static int MinCost(List<int> stairs)
     {
         int n = stairs.Count;
-        return Math.Min(CalculateCost(stairs, n - 1), CalculateCost(stairs, n - 2));
+        return System.Math.Min(CalculateCost(stairs, n - 1), CalculateCost(stairs, n - 2));
     }
 
     public static int Tribonacci(int n)
@@ -44,7 +42,7 @@ public static class Stairs
             case 1:
                 return stairs[n];
             default:
-                return stairs[n] + Math.Min(CalculateCost(stairs, n - 1), CalculateCost(stairs, n - 2));
+                return stairs[n] + System.Math.Min(CalculateCost(stairs, n - 1), CalculateCost(stairs, n - 2));
         }
     }
 }

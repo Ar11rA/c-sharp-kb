@@ -79,7 +79,7 @@ static void Main()
                       JumpGame.CountMinJumps(new List<int> {3, 2, 1, 0, 4}));
     Console.WriteLine(JumpGame.CanJump(new List<int> {1, 2, 0, 3, 0, 0}) + " " +
                       JumpGame.CountMinJumps(new List<int> {1, 2, 0, 3, 0, 0}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 0, 2} )+ " " +
+    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 0, 2}) + " " +
                       JumpGame.CountMinJumps(new List<int> {1, 0, 2}));
 
     PrimeFactor.GetFactors(25).ForEach(Console.WriteLine);
@@ -138,6 +138,10 @@ static void Main()
 
     Console.WriteLine();
 
+    Console.WriteLine("Linked list palindrome");
+    Console.WriteLine(LinkedListExamples.IsPalindrome(new ListNode(1, new ListNode(2, new ListNode(3)))));
+    Console.WriteLine(LinkedListExamples.IsPalindrome(new ListNode(1, new ListNode(2, new ListNode(1)))));
+
     Console.WriteLine(DSAExamples.ValidateParenthesis("{{}}"));
     Console.WriteLine(DSAExamples.ValidateParenthesis("({)}"));
     Console.WriteLine(DSAExamples.CountStudents(new List<int> {1, 1, 0, 0}, new List<int> {0, 1, 0, 1}));
@@ -174,6 +178,14 @@ static void Main()
     Console.WriteLine(Stairs.Climb(3));
     Console.WriteLine(Stairs.Tribonacci(4));
     Console.WriteLine(Stairs.MinCost(new List<int> {10, 15, 20}));
+
+    Console.WriteLine(Palindrome.IsPal(12321));
+    Console.WriteLine(Palindrome.IsPal(12));
+    Console.WriteLine(Palindrome.IsPal(-123));
+    Palindrome.Generate(new List<int> {1, 2, 3, 4, 5, 90}, 3).ForEach(Console.WriteLine);
+    Palindrome.Generate(new List<int> {2, 4, 6}, 4).ForEach(Console.WriteLine);
+    Console.WriteLine();
+
     Console.WriteLine("******************************************************************************");
 }
 
