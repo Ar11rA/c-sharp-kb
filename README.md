@@ -33,10 +33,19 @@
     - Stack - https://leetcode.com/problems/valid-parentheses/
     - Queue - https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
     - Priority Queue / Heap - https://leetcode.com/problems/top-k-frequent-elements/
+  - InplaceOperations.cs
+    - Remove Duplicated from sorted array - https://leetcode.com/problems/remove-duplicates-from-sorted-array
+    - Remove Element - https://leetcode.com/problems/remove-element
   - LongestNonRepeatingSubstring.cs - https://leetcode.com/problems/longest-substring-without-repeating-characters
+  - LongestCommonPrefix.cs - https://leetcode.com/problems/longest-common-prefix/
   - Palindrome.cs
     - https://leetcode.com/problems/palindrome-number/
     - https://leetcode.com/problems/find-palindrome-with-fixed-length/
+  - Converter.cs
+    - Integer to Roman - https://leetcode.com/problems/integer-to-roman/
+    - Roman to Integer - https://leetcode.com/problems/roman-to-integer/
+    - StrStr - https://leetcode.com/problems/implement-strstr/
+    - LengthOfLastWord - https://leetcode.com/problems/length-of-last-word/
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.

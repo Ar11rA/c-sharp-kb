@@ -186,6 +186,18 @@ static void Main()
     Palindrome.Generate(new List<int> {2, 4, 6}, 4).ForEach(Console.WriteLine);
     Console.WriteLine();
 
+    Console.WriteLine(Converter.RomanToNumber("IV"));
+    Console.WriteLine(Converter.RomanToNumber("XVII"));
+    Console.WriteLine(Converter.NumberToRoman(45));
+    Console.WriteLine(Converter.NumberToRoman(14));
+    Console.WriteLine(Converter.StrStr("hello", "ll"));
+    Console.WriteLine(Converter.LengthOfLastWord("   world"));
+    Console.WriteLine(Converter.LengthOfLastWord("Hello world "));
+
+    Console.WriteLine(LongestCommonPrefix.Find(new List<string> {"flow", "flight", "flower"}));
+    Console.WriteLine(InplaceOperations.ReplaceDuplicatesCount(new[] {1, 1, 2, 2, 2, 3, 4, 5}));
+    Console.WriteLine(InplaceOperations.RemoveElement(new[] {1, 2, 3, 2, 1, 2}, 2));
+
     Console.WriteLine("******************************************************************************");
 }
 
