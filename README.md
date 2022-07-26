@@ -46,6 +46,12 @@
     - Roman to Integer - https://leetcode.com/problems/roman-to-integer/
     - StrStr - https://leetcode.com/problems/implement-strstr/
     - LengthOfLastWord - https://leetcode.com/problems/length-of-last-word/
+  - PathSum.cs - https://leetcode.com/problems/path-sum/
+  - HappyNumber.cs - https://leetcode.com/problems/happy-number/
+  - BitManipulation.cs
+    - Count set bits - https://leetcode.com/problems/number-of-1-bits/
+    - Add binary numbers - https://leetcode.com/problems/add-binary/
+  - SquareRoot.cs - https://leetcode.com/problems/sqrtx/
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.

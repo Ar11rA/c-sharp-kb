@@ -184,6 +184,9 @@ static void Main()
     Console.WriteLine(Palindrome.IsPal(-123));
     Palindrome.Generate(new List<int> {1, 2, 3, 4, 5, 90}, 3).ForEach(Console.WriteLine);
     Palindrome.Generate(new List<int> {2, 4, 6}, 4).ForEach(Console.WriteLine);
+    Console.WriteLine(SquareRoot.MySqrt(16));
+    Console.WriteLine(HappyNumber.Check(19));
+    Console.WriteLine(HappyNumber.Check(7));
     Console.WriteLine();
 
     Console.WriteLine(Converter.RomanToNumber("IV"));
