@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuoteFetcher", "QuoteFetcher\QuoteFetcher.csproj", "{6BCA887E-F946-4859-BD67-50DCDF667344}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{026DA7C3-2F81-4AF3-B7B7-255AE8494FA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{6BCA887E-F946-4859-BD67-50DCDF667344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BCA887E-F946-4859-BD67-50DCDF667344}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BCA887E-F946-4859-BD67-50DCDF667344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026DA7C3-2F81-4AF3-B7B7-255AE8494FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026DA7C3-2F81-4AF3-B7B7-255AE8494FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026DA7C3-2F81-4AF3-B7B7-255AE8494FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026DA7C3-2F81-4AF3-B7B7-255AE8494FA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

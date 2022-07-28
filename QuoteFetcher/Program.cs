@@ -1,7 +1,4 @@
 ﻿using QuoteFetcher.DTO;
-using QuoteFetcher.Services.Array;
-using QuoteFetcher.Services.BinarySearch;
-using QuoteFetcher.Services.DPRecursion;
 using QuoteFetcher.Services.DSA;
 using QuoteFetcher.Services.Generic;
 using QuoteFetcher.Services.HashMap;
@@ -73,23 +70,10 @@ static void Main()
     Console.WriteLine(CountPairs.getDistinctPairCount(new List<int> {1, 1, 1, 2, 2, 3}, 1));
     Console.WriteLine(CountPairs.getDistinctPairCount(new List<int> {1, 2, 3, 4, 5, 6}, 2));
 
-    Console.WriteLine(JumpGame.CanJump(new List<int> {2, 3, 1, 1, 4}) + " " +
-                      JumpGame.CountMinJumps(new List<int> {2, 3, 1, 1, 4}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {3, 2, 1, 0, 4}) + " " +
-                      JumpGame.CountMinJumps(new List<int> {3, 2, 1, 0, 4}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 2, 0, 3, 0, 0}) + " " +
-                      JumpGame.CountMinJumps(new List<int> {1, 2, 0, 3, 0, 0}));
-    Console.WriteLine(JumpGame.CanJump(new List<int> {1, 0, 2}) + " " +
-                      JumpGame.CountMinJumps(new List<int> {1, 0, 2}));
-
     PrimeFactor.GetFactors(25).ForEach(Console.WriteLine);
     Console.WriteLine();
-    Console.WriteLine(KokoEatingBananas.GetMinEatingSpeed(new List<int> {30, 11, 23, 4, 20}, 5));
-    Console.WriteLine(KokoEatingBananas.GetMinEatingSpeed(new List<int> {30, 11, 23, 4, 20}, 6));
-    Console.WriteLine(KokoEatingBananas.GetMinEatingSpeed(new List<int> {3, 6, 7, 11}, 8));
-
+    
     TwoSum.FindPair(new[] {3, 2, 4}, 6);
-    Console.WriteLine(MinimumRotatedSortedArray.FindMin(new List<int> {3, 4, 5, 1, 2}));
     ListNode? result = LinkedListExamples.Add(
         new ListNode(2, new ListNode(4, new ListNode(3))),
         new ListNode(5, new ListNode(6, new ListNode(4)))
@@ -153,14 +137,7 @@ static void Main()
     {
         groupedAnagram.ForEach(Console.WriteLine);
     }
-
-    List<int> spiral = SpiralMatrix.Traverse(new List<List<int>>
-    {
-        new() {1, 2, 3},
-        new() {4, 5, 6},
-        new() {7, 8, 9}
-    });
-    spiral.ForEach(Console.Write);
+    
     Console.WriteLine();
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("abcabcbb"));
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("bbbbb"));
@@ -168,23 +145,11 @@ static void Main()
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring(" "));
     Console.WriteLine(LongestNonRepeatingSubstring.FindSubstring("dvdf"));
 
-    List<List<int>> triangle = PascalTriangle.Generate(6);
-    triangle.ForEach(ut =>
-    {
-        ut.ForEach(lt => { Console.Write(lt + " "); });
-        Console.WriteLine();
-    });
-
-    Console.WriteLine(Stairs.Climb(3));
-    Console.WriteLine(Stairs.Tribonacci(4));
-    Console.WriteLine(Stairs.MinCost(new List<int> {10, 15, 20}));
-
     Console.WriteLine(Palindrome.IsPal(12321));
     Console.WriteLine(Palindrome.IsPal(12));
     Console.WriteLine(Palindrome.IsPal(-123));
     Palindrome.Generate(new List<int> {1, 2, 3, 4, 5, 90}, 3).ForEach(Console.WriteLine);
     Palindrome.Generate(new List<int> {2, 4, 6}, 4).ForEach(Console.WriteLine);
-    Console.WriteLine(SquareRoot.MySqrt(16));
     Console.WriteLine(HappyNumber.Check(19));
     Console.WriteLine(HappyNumber.Check(7));
     Console.WriteLine();
@@ -198,9 +163,6 @@ static void Main()
     Console.WriteLine(Converter.LengthOfLastWord("Hello world "));
 
     Console.WriteLine(LongestCommonPrefix.Find(new List<string> {"flow", "flight", "flower"}));
-    Console.WriteLine(InplaceOperations.ReplaceDuplicatesCount(new[] {1, 1, 2, 2, 2, 3, 4, 5}));
-    Console.WriteLine(InplaceOperations.RemoveElement(new[] {1, 2, 3, 2, 1, 2}, 2));
-
     Console.WriteLine("******************************************************************************");
 }
 
