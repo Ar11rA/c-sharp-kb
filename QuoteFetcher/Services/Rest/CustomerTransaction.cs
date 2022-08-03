@@ -3,9 +3,9 @@ using QuoteFetcher.DTO;
 
 namespace QuoteFetcher.Services.Rest;
 
-public class CustomerTransaction
+public static class CustomerTransaction
 {
-    public static async Task GetTransactions(string transactionType)
+    public static async Task<Dictionary<int, double>> GetTransactions(string transactionType)
     {
         HttpClient client = new();
         int page = 1;
@@ -39,9 +39,6 @@ public class CustomerTransaction
             }
         }
 
-        foreach ((int? key, double? value) in customerTotals)
-        {
-            Console.WriteLine(key + ": " + value);
-        }
+        return customerTotals;
     }
 }

@@ -3,7 +3,7 @@ using QuoteFetcher.DTO;
 
 namespace QuoteFetcher.Services.Rest;
 
-public class QuoteService
+public static class QuoteService
 {
     private static Dictionary<string, List<string>> GroupQuotesByAuthor(string[] quotes)
     {
@@ -29,7 +29,7 @@ public class QuoteService
             });
     }
 
-    public static async Task FetchQuotes(int numberOfQuotes)
+    public static async Task<Dictionary<string, List<string>>> FetchQuotes(int numberOfQuotes)
     {
         Console.WriteLine("Processing started at: " + DateTime.Now);
         HttpClient client = new();
@@ -40,10 +40,7 @@ public class QuoteService
             .ToList();
         string[] quoteResponse = await Task.WhenAll(quoteTasks);
         Dictionary<string, List<string>> quotesGroupedByAuthor = GroupQuotesByAuthor(quoteResponse);
-        quotesGroupedByAuthor
-            .Select(i => $"{i.Key}: {i.Value.Aggregate((a, b) => a + ";" + b)}")
-            .ToList()
-            .ForEach(Console.WriteLine);
         Console.WriteLine("Processing ended at: " + DateTime.Now);
+        return quotesGroupedByAuthor;
     }
 }
