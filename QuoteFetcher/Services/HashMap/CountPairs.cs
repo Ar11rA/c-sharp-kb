@@ -2,7 +2,7 @@ namespace QuoteFetcher.Services.HashMap;
 
 public static class CountPairs
 {
-    public static int getDistinctPairCount(List<int> numbers, int k)
+    public static int GetDistinctPairCount(List<int> numbers, int k)
     {
         Dictionary<int, bool> numberPresence = numbers.Aggregate(new Dictionary<int, bool>(), (acc, curr) =>
         {
