@@ -56,4 +56,17 @@ public class StringTests
         int[] res = DIString.DiStringMatch("IDID");
         Assert.Equal(new[] {0, 4, 1, 3, 2}, res);
     }
+    
+    [Fact]
+    public void AreIsomorphic_Success()
+    {
+        bool res = Checker.AreIsomorphic("egg", "add");
+        Assert.True(res);
+        res = Checker.AreIsomorphic("foo", "bar");
+        Assert.False(res);
+        res = Checker.AreIsomorphic("paper", "title");
+        Assert.True(res);        
+        res = Checker.AreIsomorphic("badc", "baba");
+        Assert.False(res);
+    }
 }

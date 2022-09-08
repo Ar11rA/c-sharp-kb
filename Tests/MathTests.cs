@@ -41,4 +41,26 @@ public class MathTests
         res = HappyNumber.Check(7);
         Assert.True(res);
     }
+    
+    [Fact]
+    public void UglyNumber_IsUgly()
+    {
+        bool res = UglyNumber.IsUgly(6);
+        Assert.True(res);
+        res = UglyNumber.IsUgly(1);
+        Assert.True(res);        
+        res = UglyNumber.IsUgly(14);
+        Assert.False(res);
+    }
+    
+    [Fact]
+    public void UglyNumber_NthUglyNumber()
+    {
+        int res = UglyNumber.NthUglyNumber(10);
+        Assert.Equal(12, res);
+        res = UglyNumber.NthUglyNumber(1);
+        Assert.Equal(1, res);        
+        res = UglyNumber.NthUglyNumber(7);
+        Assert.Equal(8, res);
+    }
 }

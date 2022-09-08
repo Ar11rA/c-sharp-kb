@@ -15,7 +15,6 @@ public static class QuoteService
                 {
                     return acc;
                 }
-
                 if (!acc.ContainsKey(currentQuote.author))
                 {
                     acc[currentQuote.author] = new List<string> {currentQuote.content};
