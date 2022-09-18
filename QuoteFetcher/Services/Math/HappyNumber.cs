@@ -8,6 +8,7 @@ public static class HappyNumber
         {
             return true;
         }
+
         HashSet<int> set = new() {n};
         while (n > 0)
         {
@@ -16,6 +17,7 @@ public static class HappyNumber
             {
                 return false;
             }
+
             set.Add(n);
             if (n == 1)
             {
@@ -32,7 +34,7 @@ public static class HappyNumber
         while (n > 0)
         {
             int temp = n % 10;
-            sum += (temp * temp);
+            sum += temp * temp;
             n /= 10;
         }
 

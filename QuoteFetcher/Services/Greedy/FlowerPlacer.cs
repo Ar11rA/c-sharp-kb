@@ -12,8 +12,8 @@ public static class FlowerPlacer
                 continue;
             }
 
-            bool isLeftFree = (i == 0) || flowerbed[i - 1] == 0;
-            bool isRightFree = (i == flowerbed.Length - 1) || flowerbed[i + 1] == 0;
+            bool isLeftFree = i == 0 || flowerbed[i - 1] == 0;
+            bool isRightFree = i == flowerbed.Length - 1 || flowerbed[i + 1] == 0;
             if (!isLeftFree || !isRightFree)
             {
                 continue;

@@ -1,7 +1,5 @@
 namespace QuoteFetcher.Services.Math;
 
-using System;
-
 public static class UglyNumber
 {
     public static bool IsUgly(int n)
@@ -37,16 +35,18 @@ public static class UglyNumber
 
         for (int index = 1; index < n; index++)
         {
-            int min = Math.Min(dp[ptr2] * 2, Math.Min(dp[ptr3] * 3, dp[ptr5] * 5));
+            int min = System.Math.Min(dp[ptr2] * 2, System.Math.Min(dp[ptr3] * 3, dp[ptr5] * 5));
             dp[index] = min;
             if (dp[ptr2] * 2 == min)
             {
                 ptr2++;
             }
+
             if (dp[ptr3] * 3 == min)
             {
                 ptr3++;
             }
+
             if (dp[ptr5] * 5 == min)
             {
                 ptr5++;

@@ -9,7 +9,7 @@ public static class BitManipulation
         int ctr = 0;
         while (n > 0)
         {
-            n &= (n - 1);
+            n &= n - 1;
             ctr++;
         }
 
@@ -28,7 +28,7 @@ public static class BitManipulation
             int c1 = n1 >= 0 ? a[n1] - '0' : 0;
             int c2 = n2 >= 0 ? b[n2] - '0' : 0;
 
-            int sum = (c1 ^ c2 ^ carry);
+            int sum = c1 ^ c2 ^ carry;
             carry = (c1 | carry) & (c2 | carry) & (c1 | c2);
 
             result.Insert(0, sum);

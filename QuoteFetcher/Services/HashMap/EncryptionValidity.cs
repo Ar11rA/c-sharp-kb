@@ -17,7 +17,7 @@ public static class EncryptionValidity
                     result += keyFrequencyMap[div];
                 }
 
-                if ((key / div != div) && keyFrequencyMap.ContainsKey(key / div))
+                if (key / div != div && keyFrequencyMap.ContainsKey(key / div))
                 {
                     result += keyFrequencyMap[key / div];
                 }
@@ -54,7 +54,7 @@ public static class EncryptionValidity
             }
         });
         int encryptionStrength = max * 100000;
-        long hackableKeyCount = instructionCount * (long)validityPeriod;
+        long hackableKeyCount = instructionCount * (long) validityPeriod;
         return new List<int>
         {
             hackableKeyCount > encryptionStrength ? 1 : 0, encryptionStrength

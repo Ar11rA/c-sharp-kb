@@ -13,6 +13,7 @@ public static class DIString
                 result[i] = highPtr;
                 highPtr--;
             }
+
             if (s[i] == 'I')
             {
                 result[i] = lowPtr;

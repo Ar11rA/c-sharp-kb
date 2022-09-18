@@ -61,9 +61,9 @@ public static class LinqExample
         numbers.ForEach(Console.Write);
         numbers.Skip(1).Take(2).ToList().ForEach(Console.Write);
         Console.WriteLine();
-        
+
         // Any
-        List<string> magicNumbers = new() { "ffd8ffe", "89504e47" };
+        List<string> magicNumbers = new() {"ffd8ffe", "89504e47"};
         const string sample1 = "ffd8ffe1";
         const string sample2 = "ffd8ffe0";
         const string sample3 = "89504e472132";
