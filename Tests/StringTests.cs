@@ -69,4 +69,11 @@ public class StringTests
         res = Checker.AreIsomorphic("badc", "baba");
         Assert.False(res);
     }
+    
+    [Fact]
+    public void FormSentence_Success()
+    {
+        string res = DiscountParser.FormSentence("there are $1 $2 and 5$ candies in the shop", 50);
+        Assert.Equal("there are $0.50 $1.00 and 5$ candies in the shop", res);
+    }
 }

@@ -52,6 +52,12 @@
     - Count set bits - https://leetcode.com/problems/number-of-1-bits/
     - Add binary numbers - https://leetcode.com/problems/add-binary/
   - SquareRoot.cs - https://leetcode.com/problems/sqrtx/
+  - DiscountParser.cs - https://leetcode.com/problems/apply-discount-to-prices
+- OOPS Design Questions
+  - Twitter - https://leetcode.com/problems/design-twitter
+  - ATM Machine - https://leetcode.com/problems/design-an-atm-machine/
+  - Food Rating - https://leetcode.com/problems/design-a-food-rating-system/
+  - Number Container - https://leetcode.com/problems/design-a-number-container-system/
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.
@@ -59,3 +65,7 @@
   - TopArticles.cs - HR Tag 1137670
   - MedicalRecords.cs - HR Tag 724357
   - RelevantFoodOutlet.cs - HR Tag 998334
+- Azure
+  - Cosmos DB
+  - Functions
+  - Storage accounts
