@@ -41,7 +41,7 @@ public class OopsTests
         );
         Assert.Equal("ramen", foodRatingSystem.HighestRated("japanese"));
     }
-    
+
     [Fact]
     public void FoodRatingSystemTests_NoSuchCuisine()
     {
@@ -76,7 +76,7 @@ public class OopsTests
         Exception exception = Assert.Throws<Exception>(() => twitter.PostTweet(2, 5));
         Assert.Equal("Tweet ID exists!", exception.Message);
     }
-    
+
     [Fact]
     public void TwitterTests_NoSuchUser()
     {

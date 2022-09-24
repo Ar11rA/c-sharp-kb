@@ -18,7 +18,7 @@ public class DsaTests
         Assert.Equal(0, result.Next.Val);
         Assert.Equal(8, result.Next.Next.Val);
     }
-    
+
     [Fact]
     public void LinkedListLoop_Success()
     {
@@ -27,7 +27,7 @@ public class DsaTests
         tail.Next = head;
         Assert.True(LinkedListExamples.HasCycle(head));
     }
-    
+
     [Fact]
     public void LinkedListRemoveNthNodeFromEnd_Success()
     {
@@ -38,7 +38,7 @@ public class DsaTests
         Assert.Equal(4, nthRemoved.Next.Val);
         Assert.Equal(7, nthRemoved.Next.Next.Val);
     }
-    
+
     [Fact]
     public void LinkedListMergeSortedLinkedList_Success()
     {
@@ -48,8 +48,8 @@ public class DsaTests
         );
         Assert.Equal(1, merged.Val);
         Assert.Equal(1, merged.Next.Val);
-    }    
-    
+    }
+
     [Fact]
     public void LinkedListMergeSortedRotateList_Success()
     {
@@ -58,7 +58,7 @@ public class DsaTests
         Assert.Equal(4, rotated.Val);
         Assert.Equal(5, rotated.Next.Val);
     }
-    
+
     [Fact]
     public void LinkedListMergeSortedIsPalindrome_Success()
     {
@@ -67,7 +67,7 @@ public class DsaTests
         result = LinkedListExamples.IsPalindrome(new ListNode(1, new ListNode(2, new ListNode(1))));
         Assert.True(result);
     }
-    
+
     [Fact]
     public void DSAExamplesValidateParenthesis_Success()
     {
@@ -76,7 +76,7 @@ public class DsaTests
         result = DsaExamples.ValidateParenthesis("({)}");
         Assert.False(result);
     }
-    
+
     [Fact]
     public void DSAExamplesCountStudents_Success()
     {
@@ -84,14 +84,13 @@ public class DsaTests
         Assert.Equal(0, result);
         result = DsaExamples.CountStudents(new List<int> {1, 1, 1, 0, 0, 1}, new List<int> {1, 0, 0, 0, 1, 1});
         Assert.Equal(3, result);
-    }    
-    
+    }
+
     [Fact]
     public void DSAExamplesTopKFrequent_Success()
     {
-        List<int> result =  DsaExamples.TopKFrequent(new List<int> {1, 1, 1, 2, 2, 3}, 2);
+        List<int> result = DsaExamples.TopKFrequent(new List<int> {1, 1, 1, 2, 2, 3}, 2);
         Assert.Equal(1, result[0]);
         Assert.Equal(2, result[1]);
     }
-    
 }

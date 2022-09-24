@@ -34,14 +34,14 @@ public class BinarySearchTests
         int result = MinimumRotatedSortedArray.FindMin(new List<int> {3, 4, 5, 1, 2});
         Assert.Equal(1, result);
     }
-    
+
     [Fact]
     public void SquareRoot_Success_1()
     {
         int result = SquareRoot.MySqrt(16);
         Assert.Equal(4, result);
     }
-    
+
     [Fact]
     public void SquareRoot_Success_2()
     {

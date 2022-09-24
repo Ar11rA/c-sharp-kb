@@ -1,6 +1,5 @@
 namespace QuoteFetcher.Services.OOPS;
 
-using System;
 public class AtmMachine
 {
     private readonly int[] _balanceNotes;
@@ -26,9 +25,9 @@ public class AtmMachine
         for (int index = 0; index < _possibleDenominations.Length; index++)
         {
             int number = amount / _possibleDenominations[index];
-            int available = Math.Min(_balanceNotes[_balanceNotes.Length - index - 1], number);
+            int available = System.Math.Min(_balanceNotes[_balanceNotes.Length - index - 1], number);
             tempArray[_balanceNotes.Length - index - 1] = available;
-            amount -= (available * _possibleDenominations[index]);
+            amount -= available * _possibleDenominations[index];
             if (amount != 0)
             {
                 continue;

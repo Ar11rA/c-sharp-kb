@@ -13,7 +13,7 @@ public class TreeTests
         {
             Value = 1,
             Left = null,
-            Right = new BinaryTree()
+            Right = new BinaryTree
             {
                 Value = 2,
                 Left = null,
@@ -25,7 +25,7 @@ public class TreeTests
         Assert.False(result1);
         Assert.True(result2);
     }
-    
+
     [Fact]
     public void TreeTraversal_Success()
     {

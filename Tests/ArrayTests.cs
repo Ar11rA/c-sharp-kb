@@ -12,14 +12,14 @@ public class ArrayTests
         int result = InplaceOperations.ReplaceDuplicatesCount(new[] {1, 1, 2, 2, 2, 3, 4, 5});
         Assert.Equal(5, result);
     }
-    
+
     [Fact]
     public void RemoveElement_Success()
     {
         int result = InplaceOperations.RemoveElement(new[] {1, 2, 3, 2, 1, 2}, 2);
         Assert.Equal(3, result);
     }
-    
+
     [Fact]
     public void SpiralMatrix_Success()
     {
@@ -28,12 +28,12 @@ public class ArrayTests
             new() {1, 2, 3},
             new() {4, 5, 6},
             new() {7, 8, 9}
-        }); 
+        });
         Assert.Equal(1, spiral[0]);
         Assert.Equal(4, spiral[^2]);
         Assert.Equal(5, spiral[^1]);
     }
-    
+
     [Fact]
     public void PascalTriangle_Success()
     {

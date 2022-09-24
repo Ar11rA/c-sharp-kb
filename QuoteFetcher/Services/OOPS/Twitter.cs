@@ -5,8 +5,8 @@ namespace QuoteFetcher.Services.OOPS;
 public class Twitter
 {
     private readonly List<Tweet> _tweets;
-    private readonly Dictionary<int, List<Tweet>> _userToTweets;
     private readonly Dictionary<int, HashSet<int>> _userToFollowers;
+    private readonly Dictionary<int, List<Tweet>> _userToTweets;
 
     public Twitter()
     {
@@ -43,14 +43,11 @@ public class Twitter
         {
             throw new Exception("No such user!");
         }
-        _userToTweets[userId].ForEach(tweet =>
-        {
-            tweetIds.Enqueue(tweet, tweet);
-        });
+
+        _userToTweets[userId].ForEach(tweet => { tweetIds.Enqueue(tweet, tweet); });
 
         if (_userToFollowers.ContainsKey(userId))
         {
-
             HashSet<int> followers = _userToFollowers[userId];
             followers.ToList().ForEach(uid =>
             {

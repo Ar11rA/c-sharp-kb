@@ -2,10 +2,6 @@ namespace QuoteFetcher.Services.Generic;
 
 public class GenericsExample<T> : List<T>
 {
-    public GenericsExample() : base()
-    {
-    }
-
     public void Print()
     {
         Type t = typeof(T);

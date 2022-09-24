@@ -6,6 +6,7 @@ namespace QuoteFetcher.Services.OOPS;
 public class FoodRatingSystem
 {
     private readonly Dictionary<string, PriorityQueue<Menu, Menu>> _cuisineToFood;
+
     public FoodRatingSystem(string[] foods, string[] cuisines, int[] ratings)
     {
         _cuisineToFood = new Dictionary<string, PriorityQueue<Menu, Menu>>();
@@ -23,12 +24,13 @@ public class FoodRatingSystem
             }
             else
             {
-                PriorityQueue<Menu, Menu> menu =  new(Comparer<Menu>.Create((x, y) =>
+                PriorityQueue<Menu, Menu> menu = new(Comparer<Menu>.Create((x, y) =>
                 {
                     if (x.Rating == y.Rating)
                     {
                         return CompareOrdinal(x.Food, y.Food);
                     }
+
                     return y.Rating - x.Rating;
                 }));
                 menu.Enqueue(menuItem, menuItem);
