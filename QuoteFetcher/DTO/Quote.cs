@@ -1,7 +1,9 @@
+using System.Text.Json.Serialization;
+
 namespace QuoteFetcher.DTO;
 
 public class Quote
 {
-    public string Content { get; set; }
-    public string Author { get; set; }
+    [JsonPropertyName("content")] public string Content { get; set; }
+    [JsonPropertyName("author")] public string Author { get; set; }
 }
