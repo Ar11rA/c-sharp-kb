@@ -2,6 +2,6 @@ namespace QuoteFetcher.DTO;
 
 public class Quote
 {
-    public string content { get; set; }
-    public string author { get; set; }
+    public string Content { get; set; }
+    public string Author { get; set; }
 }

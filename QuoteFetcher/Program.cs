@@ -10,6 +10,10 @@ static void Main()
     ImageExample.GetDetails("QuoteFetcher.Resources.lottapixel.jpg");
     ImageExample.GetDetails("QuoteFetcher.Resources.ok.png");
     Console.WriteLine("******************************************************************************");
+    GenericsExample<int> generics1 = new() {1, 2, 3};
+    GenericsExample<double> generics2 = new() {1.1, 2.2, 3.3};
+    generics1.Print();
+    generics2.Print();
 }
 
 Main();

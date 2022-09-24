@@ -53,7 +53,7 @@ public class StringTests
     [Fact]
     public void DiStringMatch_Success()
     {
-        int[] res = DIString.DiStringMatch("IDID");
+        int[] res = DiString.DiStringMatch("IDID");
         Assert.Equal(new[] {0, 4, 1, 3, 2}, res);
     }
     

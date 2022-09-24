@@ -33,7 +33,7 @@ public static class RootThreshold
             string url =
                 $"https://jsonmock.hackerrank.com/api/iot_devices/search?status={statusQuery}&page={page}";
             string data = await client.GetStringAsync(url);
-            IOTDeviceData? response = JsonSerializer.Deserialize<IOTDeviceData>(data);
+            IotDeviceData? response = JsonSerializer.Deserialize<IotDeviceData>(data);
             if (response == null)
             {
                 continue;

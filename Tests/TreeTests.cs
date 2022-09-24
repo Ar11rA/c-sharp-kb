@@ -54,8 +54,8 @@ public class TreeTests
             Left = firstChild,
             Right = secondChild
         };
-        TreeTraversal.DFSRecursive(parent);
-        TreeTraversal.DFSIterative(parent);
-        TreeTraversal.BFSIterative(parent);
+        TreeTraversal.DfsRecursive(parent);
+        TreeTraversal.DfsIterative(parent);
+        TreeTraversal.BfsIterative(parent);
     }
 }

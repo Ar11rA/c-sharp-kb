@@ -2,7 +2,7 @@ namespace QuoteFetcher.Services.HashMap;
 
 public static class EncryptionValidity
 {
-    private static Dictionary<int, int> keyFrequencyMap;
+    private static Dictionary<int, int> _keyFrequencyMap;
 
     private static int CountDivisors(int key)
     {
@@ -12,14 +12,14 @@ public static class EncryptionValidity
         {
             if (key % div == 0)
             {
-                if (keyFrequencyMap.ContainsKey(div))
+                if (_keyFrequencyMap.ContainsKey(div))
                 {
-                    result += keyFrequencyMap[div];
+                    result += _keyFrequencyMap[div];
                 }
 
-                if (key / div != div && keyFrequencyMap.ContainsKey(key / div))
+                if (key / div != div && _keyFrequencyMap.ContainsKey(key / div))
                 {
-                    result += keyFrequencyMap[key / div];
+                    result += _keyFrequencyMap[key / div];
                 }
             }
 
@@ -31,7 +31,7 @@ public static class EncryptionValidity
 
     public static List<int> GetStrength(int instructionCount, int validityPeriod, List<int> keys)
     {
-        keyFrequencyMap = keys.Aggregate(new Dictionary<int, int>(), (acc, curr) =>
+        _keyFrequencyMap = keys.Aggregate(new Dictionary<int, int>(), (acc, curr) =>
         {
             if (acc.ContainsKey(curr))
             {

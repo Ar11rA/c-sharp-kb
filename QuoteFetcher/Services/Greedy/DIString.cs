@@ -1,6 +1,6 @@
 namespace QuoteFetcher.Services.Greedy;
 
-public static class DIString
+public static class DiString
 {
     public static int[] DiStringMatch(string s)
     {

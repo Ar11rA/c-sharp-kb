@@ -40,7 +40,7 @@ public class CosmosExample
     }
 
     // SQL API
-    public async Task RunSQL()
+    public async Task RunSql()
     {
         // connect
         CosmosClient client = new(

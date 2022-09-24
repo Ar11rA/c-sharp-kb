@@ -71,25 +71,25 @@ public class DsaTests
     [Fact]
     public void DSAExamplesValidateParenthesis_Success()
     {
-        bool result = DSAExamples.ValidateParenthesis("{{}}");
+        bool result = DsaExamples.ValidateParenthesis("{{}}");
         Assert.True(result);
-        result = DSAExamples.ValidateParenthesis("({)}");
+        result = DsaExamples.ValidateParenthesis("({)}");
         Assert.False(result);
     }
     
     [Fact]
     public void DSAExamplesCountStudents_Success()
     {
-        int result = DSAExamples.CountStudents(new List<int> {1, 1, 0, 0}, new List<int> {0, 1, 0, 1});
+        int result = DsaExamples.CountStudents(new List<int> {1, 1, 0, 0}, new List<int> {0, 1, 0, 1});
         Assert.Equal(0, result);
-        result = DSAExamples.CountStudents(new List<int> {1, 1, 1, 0, 0, 1}, new List<int> {1, 0, 0, 0, 1, 1});
+        result = DsaExamples.CountStudents(new List<int> {1, 1, 1, 0, 0, 1}, new List<int> {1, 0, 0, 0, 1, 1});
         Assert.Equal(3, result);
     }    
     
     [Fact]
     public void DSAExamplesTopKFrequent_Success()
     {
-        List<int> result =  DSAExamples.TopKFrequent(new List<int> {1, 1, 1, 2, 2, 3}, 2);
+        List<int> result =  DsaExamples.TopKFrequent(new List<int> {1, 1, 1, 2, 2, 3}, 2);
         Assert.Equal(1, result[0]);
         Assert.Equal(2, result[1]);
     }

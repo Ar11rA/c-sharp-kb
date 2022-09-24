@@ -1,6 +1,6 @@
 namespace QuoteFetcher.Services.DSA;
 
-public static class DSAExamples
+public static class DsaExamples
 {
     // stack use case
     public static bool ValidateParenthesis(string input)

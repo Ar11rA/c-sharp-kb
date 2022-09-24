@@ -5,7 +5,7 @@ namespace QuoteFetcher.Services.Tree;
 public static class TreeTraversal
 {
     // In binary tree, DFS search can be done 3 ways - inorder, preorder, postorder
-    public static void DFSRecursive(BinaryTree? binaryTree)
+    public static void DfsRecursive(BinaryTree? binaryTree)
     {
         if (binaryTree == null)
         {
@@ -13,12 +13,12 @@ public static class TreeTraversal
         }
 
         Console.Write(binaryTree.Value + " ");
-        DFSRecursive(binaryTree.Left);
-        DFSRecursive(binaryTree.Right);
+        DfsRecursive(binaryTree.Left);
+        DfsRecursive(binaryTree.Right);
     }
 
     // preorder iterative
-    public static void DFSIterative(BinaryTree? binaryTree)
+    public static void DfsIterative(BinaryTree? binaryTree)
     {
         Stack<BinaryTree> stack = new();
         stack.Push(binaryTree);
@@ -39,7 +39,7 @@ public static class TreeTraversal
     }
 
     // BFS can be done only as level order using Queue
-    public static void BFSIterative(BinaryTree? binaryTree)
+    public static void BfsIterative(BinaryTree? binaryTree)
     {
         Queue<BinaryTree> queue = new();
         queue.Enqueue(binaryTree);

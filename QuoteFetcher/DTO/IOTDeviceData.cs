@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace QuoteFetcher.DTO;
 
-public class IOTDeviceData
+public class IotDeviceData
 {
     [JsonPropertyName("total_pages")] public int TotalPages { get; set; }
 

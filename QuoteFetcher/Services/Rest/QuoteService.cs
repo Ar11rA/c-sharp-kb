@@ -16,13 +16,13 @@ public static class QuoteService
                     return acc;
                 }
 
-                if (!acc.ContainsKey(currentQuote.author))
+                if (!acc.ContainsKey(currentQuote.Author))
                 {
-                    acc[currentQuote.author] = new List<string> {currentQuote.content};
+                    acc[currentQuote.Author] = new List<string> {currentQuote.Content};
                 }
                 else
                 {
-                    acc[currentQuote.author].Add(currentQuote.content);
+                    acc[currentQuote.Author].Add(currentQuote.Content);
                 }
 
                 return acc;
