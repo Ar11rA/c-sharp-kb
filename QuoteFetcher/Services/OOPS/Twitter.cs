@@ -19,7 +19,7 @@ public class Twitter
     {
         if (_tweets.FindIndex(t => t.TweetId == tweetId) != -1)
         {
-            throw new Exception("Tweet ID exists");
+            throw new Exception("Tweet ID exists!");
         }
 
         Tweet tweet = new(tweetId);

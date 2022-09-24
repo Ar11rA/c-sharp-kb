@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using QuoteFetcher.Services.OOPS;
 using Xunit;
@@ -31,7 +32,7 @@ public class OopsTests
     }
 
     [Fact]
-    public void FoodRatingSystemTests()
+    public void FoodRatingSystemTests_Success()
     {
         FoodRatingSystem foodRatingSystem = new(
             new[] {"kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"},
@@ -40,9 +41,21 @@ public class OopsTests
         );
         Assert.Equal("ramen", foodRatingSystem.HighestRated("japanese"));
     }
+    
+    [Fact]
+    public void FoodRatingSystemTests_NoSuchCuisine()
+    {
+        FoodRatingSystem foodRatingSystem = new(
+            new[] {"kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"},
+            new[] {"korean", "japanese", "japanese", "greek", "japanese", "korean"},
+            new[] {9, 12, 8, 15, 14, 7}
+        );
+        Exception exception = Assert.Throws<Exception>(() => foodRatingSystem.HighestRated("indian"));
+        Assert.Equal("Cuisine not found!", exception.Message);
+    }
 
     [Fact]
-    public void TwitterTests()
+    public void TwitterTests_Success()
     {
         Twitter twitter = new();
         twitter.PostTweet(1, 5);
@@ -52,5 +65,24 @@ public class OopsTests
         Assert.Equal(new List<int> {6, 5}, twitter.GetNewsFeed(1));
         twitter.Unfollow(1, 2);
         Assert.Equal(new List<int> {5}, twitter.GetNewsFeed(1));
+    }
+
+
+    [Fact]
+    public void TwitterTests_TweetIDExists()
+    {
+        Twitter twitter = new();
+        twitter.PostTweet(1, 5);
+        Exception exception = Assert.Throws<Exception>(() => twitter.PostTweet(2, 5));
+        Assert.Equal("Tweet ID exists!", exception.Message);
+    }
+    
+    [Fact]
+    public void TwitterTests_NoSuchUser()
+    {
+        Twitter twitter = new();
+        twitter.PostTweet(1, 5);
+        Exception exception = Assert.Throws<Exception>(() => twitter.GetNewsFeed(2));
+        Assert.Equal("No such user!", exception.Message);
     }
 }
