@@ -38,6 +38,7 @@
     - Remove Element - https://leetcode.com/problems/remove-element
   - LongestNonRepeatingSubstring.cs - https://leetcode.com/problems/longest-substring-without-repeating-characters
   - LongestCommonPrefix.cs - https://leetcode.com/problems/longest-common-prefix/
+  - LongestPalindromicSubstring.cs - https://leetcode.com/problems/longest-palindromic-substring/
   - Palindrome.cs
     - https://leetcode.com/problems/palindrome-number/
     - https://leetcode.com/problems/find-palindrome-with-fixed-length/
@@ -48,6 +49,7 @@
     - LengthOfLastWord - https://leetcode.com/problems/length-of-last-word/
   - PathSum.cs - https://leetcode.com/problems/path-sum/
   - HappyNumber.cs - https://leetcode.com/problems/happy-number/
+  - Median.cs - https://leetcode.com/problems/median-of-two-sorted-arrays/
   - BitManipulation.cs
     - Count set bits - https://leetcode.com/problems/number-of-1-bits/
     - Add binary numbers - https://leetcode.com/problems/add-binary/

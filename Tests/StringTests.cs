@@ -76,4 +76,22 @@ public class StringTests
         string res = DiscountParser.FormSentence("there are $1 $2 and 5$ candies in the shop", 50);
         Assert.Equal("there are $0.50 $1.00 and 5$ candies in the shop", res);
     }
+    
+    [Fact]
+    public void LongestPalindromicSubstring_Success()
+    {
+        string res = LongestPalindromicSubstring.BruteForce("babad");
+        Assert.Matches("bab|aba", res);
+        res = LongestPalindromicSubstring.BruteForce("cbbd");
+        Assert.Equal("bb", res);
+        res = LongestPalindromicSubstring.BruteForce("abcd");
+        Assert.Matches("a|b|c|d", res);
+        
+        res = LongestPalindromicSubstring.ExpandAroundCenter("babad");
+        Assert.Matches("bab|aba", res);
+        res = LongestPalindromicSubstring.ExpandAroundCenter("cbbd");
+        Assert.Equal("bb", res);
+        res = LongestPalindromicSubstring.ExpandAroundCenter("abcd");
+        Assert.Matches("a|b|c|d", res);
+    }
 }

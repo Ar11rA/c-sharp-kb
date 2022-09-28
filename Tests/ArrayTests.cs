@@ -45,4 +45,19 @@ public class ArrayTests
         Assert.Equal(5, triangle[5][4]);
         Assert.Equal(1, triangle[5][5]);
     }
+
+    [Fact] 
+    public void Median_Success()
+    {
+        double res = Median.CalculateTwoSortedArrays(
+            new[] {1, 2},
+            new[] {3}
+        );
+        Assert.Equal(2.0d, res);
+        res = Median.CalculateTwoSortedArrays(
+            new[] {1, 2},
+            new[] {3, 4}
+        );
+        Assert.Equal(2.5d, res);
+    }
 }
