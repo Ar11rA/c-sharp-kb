@@ -8,14 +8,14 @@ public static class ZigZagConversion
         {
             return s;
         }
-        
+
         int ctr = 0;
         string[] result = new string[numRows];
         for (int i = 0; i < numRows; i++)
         {
             result[i] = "";
         }
-        
+
         while (ctr < s.Length)
         {
             for (int i = 0; i < numRows && ctr < s.Length; i++)

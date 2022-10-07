@@ -104,4 +104,19 @@ public class DsaTests
         Assert.Equal(1, result[0]);
         Assert.Equal(2, result[1]);
     }
+    
+    [Fact]
+    public void InternalHashMap_Success()
+    {
+        InternalHashMap hm = new();
+        hm.Put(1112, 2);
+        Assert.Equal(2, hm.Get(1112));
+        Assert.Equal(-1, hm.Get(1));
+        hm.Put(2122, 3);
+        hm.Put(2122, 4);
+        hm.Put(3931, 6);
+        hm.Put(4012, 8);
+        hm.Put(3671, 9);
+        Assert.Equal(9, hm.Get(3671));
+    }
 }

@@ -89,4 +89,23 @@ public class DpRecursionTests
         });
         Assert.Equal(0, result);
     }
+    
+    
+    [Fact]
+    public void MaximalSquare_Success()
+    {
+        int result = MaximalSquare.Calculate(new char[][]
+        {
+            new[] {'1','0','1','0','1'},
+            new[] {'1','0','1','1','1'},
+            new[] {'1','1','1','1','1'},
+            new[] {'1','0','0','1','0'},
+        });
+        Assert.Equal(4, result);
+        result = MaximalSquare.Calculate(new char[][]
+        {
+            new[] {'0', '1'}
+        });
+        Assert.Equal(1, result);
+    }
 }

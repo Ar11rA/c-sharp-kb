@@ -174,7 +174,7 @@ public static class LinkedListExamples
 
         return true;
     }
-    
+
     public static ListNode SwapNodes(ListNode head, int k)
     {
         ListNode fast = head, slow = head;

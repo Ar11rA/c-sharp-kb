@@ -17,7 +17,12 @@
       - Min cost - https://leetcode.com/problems/min-cost-climbing-stairs/
       - Climbing stairs - https://leetcode.com/problems/climbing-stairs/
       - Nth Tribonacci - https://leetcode.com/problems/n-th-tribonacci-number/
+    - MaximalSquare.cs - https://leetcode.com/problems/maximal-square/
+    - UniquePaths.cs
+      - W/O obstacle - https://leetcode.com/problems/unique-paths
+      - With obstacle - https://leetcode.com/problems/unique-paths-ii
   - TwoSum.cs - https://leetcode.com/problems/two-sum/
+  - ZigZagConversion.cs - https://leetcode.com/problems/zigzag-conversion
   - PrimeFactor.cs - https://leetcode.com/problems/2-keys-keyboard
   - KokoEatingBananas.cs - https://leetcode.com/problems/koko-eating-bananas/
   - GroupAnagrams.cs - https://leetcode.com/problems/group-anagrams
@@ -59,15 +64,12 @@
   - LetterCombinations.cs - https://leetcode.com/problems/letter-combinations-of-a-phone-number
   - MaxAreaContainer.cs - https://leetcode.com/problems/container-with-most-water
   - MaximumSubarray.cs - https://leetcode.com/problems/maximum-subarray/
-  - UniquePaths.cs
-    - W/O obstacle - https://leetcode.com/problems/unique-paths
-    - With obstacle - https://leetcode.com/problems/unique-paths-ii
-  - ZigZagConversion.cs - https://leetcode.com/problems/zigzag-conversion
 - OOPS Design Questions
   - Twitter - https://leetcode.com/problems/design-twitter
   - ATM Machine - https://leetcode.com/problems/design-an-atm-machine/
   - Food Rating - https://leetcode.com/problems/design-a-food-rating-system/
   - Number Container - https://leetcode.com/problems/design-a-number-container-system/
+  - InternalHashMap.cs - https://leetcode.com/problems/design-hashmap
 - Rest API - Http client examples
   - CustomerTransaction.cs - HR Tag 756803
   - QuoteService.cs - Fetch 25 quotes from http://api.quotable.io/random. Group quotes by author name.

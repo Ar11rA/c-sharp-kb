@@ -44,13 +44,13 @@ public static class LongestPalindromicSubstring
     {
         if (word.Length == 1)
             return word;
-        
+
         string result = "";
         for (int iter = 0; iter < word.Length; iter++)
         {
             string s1 = findPalindrome(word, iter, iter);
-            string s2 = findPalindrome(word, iter, iter+1);
-            
+            string s2 = findPalindrome(word, iter, iter + 1);
+
             result = s1.Length > result.Length ? s1 : result;
             result = s2.Length > result.Length ? s2 : result;
         }
