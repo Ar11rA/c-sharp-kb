@@ -71,5 +71,25 @@ public static class LinqExample
         Console.WriteLine(magicNumbers.Any(word => sample1.StartsWith(word)));
         Console.WriteLine(magicNumbers.Any(word => sample2.StartsWith(word)));
         Console.WriteLine(magicNumbers.Any(word => sample3.StartsWith(word)));
+        
+        // Select Many
+        List<string> nameList =new () {"abc", "def" };
+        IEnumerable<char> methodSyntax = nameList.SelectMany(x => x);
+        
+        IEnumerable<char> querySyntax = from str in nameList
+            from ch in str
+            select ch;
+        
+        foreach(char c in methodSyntax)
+        {
+            Console.Write(c + " ");
+        }
+        Console.WriteLine();
+        
+        foreach(char c in querySyntax)
+        {
+            Console.Write(c + " ");
+        }
+        Console.WriteLine();
     }
 }

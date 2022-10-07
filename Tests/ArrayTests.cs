@@ -46,7 +46,7 @@ public class ArrayTests
         Assert.Equal(1, triangle[5][5]);
     }
 
-    [Fact] 
+    [Fact]
     public void Median_Success()
     {
         double res = Median.CalculateTwoSortedArrays(
@@ -59,5 +59,15 @@ public class ArrayTests
             new[] {3, 4}
         );
         Assert.Equal(2.5d, res);
+    }
+
+
+    [Fact]
+    public void MaximumSubarray_Success()
+    {
+        int res = MaximumSubarray.Calculate(
+            new[] {-2, 1, -3, 4, -1, 2, 1, -5, 4}
+        );
+        Assert.Equal(6, res);
     }
 }

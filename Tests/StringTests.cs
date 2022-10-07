@@ -94,4 +94,13 @@ public class StringTests
         res = LongestPalindromicSubstring.ExpandAroundCenter("abcd");
         Assert.Matches("a|b|c|d", res);
     }
+    
+    [Fact]
+    public void ZigZagConversion_Success()
+    {
+        string res = ZigZagConversion.Convert("PAYPALISHIRING", 3);
+        Assert.Equal("PAHNAPLSIIGYIR", res);
+        res = ZigZagConversion.Convert("PAYPALISHIRING", 4);
+        Assert.Equal("PINALSIGYAHRPI", res);
+    }
 }

@@ -174,4 +174,30 @@ public static class LinkedListExamples
 
         return true;
     }
+    
+    public static ListNode SwapNodes(ListNode head, int k)
+    {
+        ListNode fast = head, slow = head;
+
+        for (int i = 0; i < k - 1; i++)
+        {
+            fast = fast.Next;
+        }
+
+        ListNode first = fast;
+
+        while (fast.Next != null)
+        {
+            fast = fast.Next;
+            slow = slow.Next;
+        }
+
+        ListNode second = slow;
+
+        int temp = first.Val;
+        first.Val = second.Val;
+        second.Val = temp;
+
+        return head;
+    }
 }

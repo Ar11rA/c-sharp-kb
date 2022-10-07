@@ -44,4 +44,49 @@ public class DpRecursionTests
         int result = Stairs.MinCost(new List<int> {10, 15, 20});
         Assert.Equal(15, result);
     }
+
+    [Fact]
+    public void LetterCombinationsPhone_Success()
+    {
+        List<string> result = LetterCombinationsPhone.FindCombinations("23");
+        Assert.Equal(new List<string>
+        {
+            "ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"
+        }, result);
+    }
+
+    [Fact]
+    public void LetterCombinationsPhoneLinq_Success()
+    {
+        List<string> result = LetterCombinationsPhone.FindCombinationsLinq("23");
+        Assert.Equal(new List<string>
+        {
+            "ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"
+        }, result);
+    }
+
+    [Fact]
+    public void UniquePaths_Success_1()
+    {
+        int result = UniquePaths.CalculateWithoutObstacle(7, 3);
+        Assert.Equal(28, result);
+    }
+
+    [Fact]
+    public void UniquePaths_Success_2()
+    {
+        int result = UniquePaths.CalculateWithObstacles(new int[][]
+        {
+            new[] {0, 0, 0},
+            new[] {0, 1, 0},
+            new[] {0, 0, 0}
+        });
+        Assert.Equal(2, result);
+        
+        result = UniquePaths.CalculateWithObstacles(new int[][]
+        {
+            new[] {1, 0},
+        });
+        Assert.Equal(0, result);
+    }
 }

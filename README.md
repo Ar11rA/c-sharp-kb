@@ -27,6 +27,7 @@
     - Remove nth node from end - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
     - Rotate linked list - https://leetcode.com/problems/rotate-list/
     - IsPalindrome - https://leetcode.com/problems/palindrome-linked-list/
+    - Swap nodes - https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
   - MinimumRotatedSortedArray.cs - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
   - SpiralMatrix.cs - https://leetcode.com/problems/spiral-matrix/
   - DSAExamples.cs
@@ -55,6 +56,13 @@
     - Add binary numbers - https://leetcode.com/problems/add-binary/
   - SquareRoot.cs - https://leetcode.com/problems/sqrtx/
   - DiscountParser.cs - https://leetcode.com/problems/apply-discount-to-prices
+  - LetterCombinations.cs - https://leetcode.com/problems/letter-combinations-of-a-phone-number
+  - MaxAreaContainer.cs - https://leetcode.com/problems/container-with-most-water
+  - MaximumSubarray.cs - https://leetcode.com/problems/maximum-subarray/
+  - UniquePaths.cs
+    - W/O obstacle - https://leetcode.com/problems/unique-paths
+    - With obstacle - https://leetcode.com/problems/unique-paths-ii
+  - ZigZagConversion.cs - https://leetcode.com/problems/zigzag-conversion
 - OOPS Design Questions
   - Twitter - https://leetcode.com/problems/design-twitter
   - ATM Machine - https://leetcode.com/problems/design-an-atm-machine/

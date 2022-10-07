@@ -32,4 +32,15 @@ public class GreedyTests
         int result = AssignCookies.FindContentChildren(new[] {1, 2, 3}, new[] {1, 2});
         Assert.Equal(2, result);
     }
+
+    [Fact]
+    public void MaxAreaContainer_Success()
+    {
+        int result = MaxAreaContainer.Calculate(new[] {1, 8, 6, 2, 5, 4, 8, 3, 7});
+        Assert.Equal(49, result);
+        result = MaxAreaContainer.Calculate(new[] {1, 1});
+        Assert.Equal(1, result);
+        result = MaxAreaContainer.Calculate(new[] {1, 8, 100, 2, 100, 4, 8, 3, 7});
+        Assert.Equal(200, result);
+    }
 }

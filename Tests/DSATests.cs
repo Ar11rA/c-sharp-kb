@@ -67,6 +67,17 @@ public class DsaTests
         result = LinkedListExamples.IsPalindrome(new ListNode(1, new ListNode(2, new ListNode(1))));
         Assert.True(result);
     }
+    
+    [Fact]
+    public void LinkedListMergeSwapNodes_Success()
+    {
+        ListNode result = LinkedListExamples.SwapNodes(new ListNode(1, 
+            new ListNode(2, 
+                new ListNode(3, 
+                    new ListNode(4, 
+                        new ListNode(5))))), 2);
+        Assert.Equal(4, result.Next.Val);
+    }
 
     [Fact]
     public void DSAExamplesValidateParenthesis_Success()
