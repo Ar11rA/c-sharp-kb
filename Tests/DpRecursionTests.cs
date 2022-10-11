@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using QuoteFetcher.Services.DPRecursion;
+using QuoteFetcher.Services.Tree;
 using Xunit;
 
 namespace Tests;
@@ -94,7 +96,7 @@ public class DpRecursionTests
     [Fact]
     public void MaximalSquare_Success()
     {
-        int result = MaximalSquare.Calculate(new char[][]
+        int result = MaximalSquare.Calculate(new[]
         {
             new[] {'1','0','1','0','1'},
             new[] {'1','0','1','1','1'},
@@ -102,10 +104,35 @@ public class DpRecursionTests
             new[] {'1','0','0','1','0'},
         });
         Assert.Equal(4, result);
-        result = MaximalSquare.Calculate(new char[][]
+        result = MaximalSquare.Calculate(new[]
         {
             new[] {'0', '1'}
         });
         Assert.Equal(1, result);
+    }
+    
+    [Fact]
+    public void AllPaths_Success_1()
+    {
+        IList<IList<int>> result = AllPaths.Run(new[]
+        {
+            new[] {1, 2},
+            new[] {3}, 
+            new[] {3}, 
+            Array.Empty<int>()
+        });
+        Assert.Equal(2, result.Count);
+    }
+    
+    [Fact]
+    public void AllPaths_Success_2()
+    {
+        IList<IList<int>> result = AllPaths.Run(new[]
+        {
+            new[] {2},
+            Array.Empty<int>(),
+            new[] {1}
+        });
+        Assert.Equal(1, result.Count);
     }
 }

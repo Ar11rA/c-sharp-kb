@@ -58,4 +58,79 @@ public class TreeTests
         TreeTraversal.DfsIterative(parent);
         TreeTraversal.BfsIterative(parent);
     }
+
+    [Fact]
+    public void FloodFill_Success()
+    {
+        int[][] filledImage = FloodFill.Run(new[]
+        {
+            new[] {1, 1, 1},
+            new[] {1, 1, 0},
+            new[] {1, 0, 1}
+        }, 1, 1, 2);
+        Assert.Equal(2, filledImage[0][0]);
+    }
+
+    [Fact]
+    public void RottingOranges_Success()
+    {
+        int filledImage = RottingOranges.Run(new[]
+        {
+            new[] {2, 1, 1},
+            new[] {1, 1, 0},
+            new[] {0, 1, 1}
+        });
+        Assert.Equal(4, filledImage);
+    }
+
+    [Fact]
+    public void IslandPerimeter_Success_1()
+    {
+        int perimeter = IslandPerimeter.Run(new[]
+        {
+            new[] {0, 1, 0, 0},
+            new[] {1, 1, 1, 0},
+            new[] {0, 1, 0, 0},
+            new[] {1, 1, 0, 0}
+        });
+        Assert.Equal(16, perimeter);
+    }
+
+    [Fact]
+    public void IslandPerimeter_Success_2()
+    {
+        int perimeter = IslandPerimeter.Run(new[]
+        {
+            new[] {1, 1},
+            new[] {1, 1}
+      });
+        Assert.Equal(8, perimeter);
+    }
+    
+    [Fact]
+    public void CourseSchedule_Success()
+    {
+        bool res = CourseSchedule.CanFinish(3, new[]
+        {
+            new[] {0, 1},
+            new[] {1, 2}
+        });
+        Assert.True(res);
+        res = CourseSchedule.CanFinish(2, new[]
+        {
+            new[] {0, 1},
+            new[] {1, 0}
+        });
+        Assert.False(res);
+    }
+    
+    [Fact]
+    public void CourseSchedule_Success_2()
+    {
+        bool res = CourseSchedule.CanFinish(2, new[]
+        {
+            new[] {1, 0}
+        });
+        Assert.True(res);
+    }
 }

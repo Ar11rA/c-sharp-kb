@@ -64,6 +64,11 @@
   - LetterCombinations.cs - https://leetcode.com/problems/letter-combinations-of-a-phone-number
   - MaxAreaContainer.cs - https://leetcode.com/problems/container-with-most-water
   - MaximumSubarray.cs - https://leetcode.com/problems/maximum-subarray/
+  - AllPaths.cs - https://leetcode.com/problems/all-paths-from-source-to-target/
+  - CourseSchedule.cs - https://leetcode.com/problems/course-schedule/
+  - FloodFill.cs - https://leetcode.com/problems/flood-fill/
+  - IslandPerimeter.cs - https://leetcode.com/problems/island-perimeter/
+  - RottingOranges.cs - https://leetcode.com/problems/rotting-oranges/
 - OOPS Design Questions
   - Twitter - https://leetcode.com/problems/design-twitter
   - ATM Machine - https://leetcode.com/problems/design-an-atm-machine/
