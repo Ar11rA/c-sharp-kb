@@ -84,24 +84,24 @@ public class DpRecursionTests
             new[] {0, 0, 0}
         });
         Assert.Equal(2, result);
-        
+
         result = UniquePaths.CalculateWithObstacles(new int[][]
         {
             new[] {1, 0},
         });
         Assert.Equal(0, result);
     }
-    
-    
+
+
     [Fact]
     public void MaximalSquare_Success()
     {
         int result = MaximalSquare.Calculate(new[]
         {
-            new[] {'1','0','1','0','1'},
-            new[] {'1','0','1','1','1'},
-            new[] {'1','1','1','1','1'},
-            new[] {'1','0','0','1','0'},
+            new[] {'1', '0', '1', '0', '1'},
+            new[] {'1', '0', '1', '1', '1'},
+            new[] {'1', '1', '1', '1', '1'},
+            new[] {'1', '0', '0', '1', '0'},
         });
         Assert.Equal(4, result);
         result = MaximalSquare.Calculate(new[]
@@ -110,20 +110,20 @@ public class DpRecursionTests
         });
         Assert.Equal(1, result);
     }
-    
+
     [Fact]
     public void AllPaths_Success_1()
     {
         IList<IList<int>> result = AllPaths.Run(new[]
         {
             new[] {1, 2},
-            new[] {3}, 
-            new[] {3}, 
+            new[] {3},
+            new[] {3},
             Array.Empty<int>()
         });
         Assert.Equal(2, result.Count);
     }
-    
+
     [Fact]
     public void AllPaths_Success_2()
     {
@@ -134,5 +134,36 @@ public class DpRecursionTests
             new[] {1}
         });
         Assert.Equal(1, result.Count);
+    }
+
+    [Fact]
+    public void MinimumPathSum_Success_1()
+    {
+        int result = MinimumPathSum.Run(new[]
+        {
+            new[] {1, 3, 1},
+            new[] {1, 5, 1},
+            new[] {4, 2, 1}
+        });
+        Assert.Equal(7, result);
+    }
+    
+    [Fact]
+    public void MinimumPathSum_Success_2()
+    {
+        int result = MinimumPathSum.Run(new[]
+        {
+            new[] {1, 2},
+            new[] {5, 6},
+            new[] {1, 1}
+        });
+        Assert.Equal(8, result);
+    }
+    
+    [Fact]
+    public void DecodeWays_Success()
+    {
+        int result = DecodeWays.Run("126");
+        Assert.Equal(3, result);
     }
 }

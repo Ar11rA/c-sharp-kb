@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using QuoteFetcher.DTO;
 using QuoteFetcher.Services.Tree;
 using Xunit;
@@ -132,5 +133,33 @@ public class TreeTests
             new[] {1, 0}
         });
         Assert.True(res);
+    }
+    
+    [Fact]
+    public void RoomVisitor_Success_1()
+    {
+        List<IList<int>> rooms = new()
+        {
+            new List<int> {1},
+            new List<int> {2},
+            new List<int>{3},
+            new List<int>{0}
+        };
+        bool res = RoomVisitor.Check(rooms);
+        Assert.True(res);
+    }
+    
+    [Fact]
+    public void RoomVisitor_Success_2()
+    {
+        List<IList<int>> rooms = new()
+        {
+            new List<int> {1, 3},
+            new List<int> {3, 0, 1},
+            new List<int>{2},
+            new List<int>{0}
+        };
+        bool res = RoomVisitor.Check(rooms);
+        Assert.False(res);
     }
 }
