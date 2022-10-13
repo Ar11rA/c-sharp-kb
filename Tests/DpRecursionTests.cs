@@ -147,7 +147,7 @@ public class DpRecursionTests
         });
         Assert.Equal(7, result);
     }
-    
+
     [Fact]
     public void MinimumPathSum_Success_2()
     {
@@ -159,11 +159,48 @@ public class DpRecursionTests
         });
         Assert.Equal(8, result);
     }
-    
+
     [Fact]
     public void DecodeWays_Success()
     {
-        int result = DecodeWays.Run("126");
+        int result = DecodeWays.RunRecursive("126");
+        Assert.Equal(3, result);
+        result = DecodeWays.RunDP("126");
+        Assert.Equal(3, result);
+        result = DecodeWays.RunRecursive("1221");
+        Assert.Equal(5, result);
+        result = DecodeWays.RunDP("1221");
+        Assert.Equal(5, result);
+    }
+
+    [Fact]
+    public void HouseRobber_Success_1()
+    {
+        int result = HouseRobber.RobRecursive(new[] {1, 2, 3, 1});
+        Assert.Equal(4, result);
+        result = HouseRobber.RobRecursive(new[] {2, 7, 9, 3, 1});
+        Assert.Equal(12, result);
+    }
+
+    [Fact]
+    public void HouseRobber_Success_2()
+    {
+        int result = HouseRobber.RobDP(new[] {1, 2, 3, 1});
+        Assert.Equal(4, result);
+        result = HouseRobber.RobDP(new[] {2, 7, 9, 3, 1});
+        Assert.Equal(12, result);
+    }
+
+    [Fact]
+    public void HouseRobber_Success_3()
+    {
+        int result = HouseRobber.RobDPCircle(new[] {2, 3, 2});
+        Assert.Equal(3, result);
+        result = HouseRobber.RobDPCircle(new[] {2, 7, 9, 3, 1});
+        Assert.Equal(11, result);
+        result = HouseRobber.RobDPCircle(new[] {1, 2, 1, 1});
+        Assert.Equal(3, result);
+        result = HouseRobber.RobDPCircle(new[] {2, 1, 1, 2});
         Assert.Equal(3, result);
     }
 }

@@ -10,6 +10,10 @@
     - DFS
     - BFS
   - DP
+    - DecodeWays.cs - https://leetcode.com/problems/decode-ways/
+    - HouseRobber.cs
+      - https://leetcode.com/problems/house-robber
+      - https://leetcode.com/problems/house-robber-ii
     - JumpGame.cs - 
       - Check if jump possible - https://leetcode.com/problems/jump-game/
       - Min Jumps - https://leetcode.com/problems/jump-game-ii
