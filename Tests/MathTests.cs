@@ -63,4 +63,11 @@ public class MathTests
         res = UglyNumber.NthUglyNumber(7);
         Assert.Equal(8, res);
     }
+    
+    [Fact]
+    public void RestoreIPAddress_Success()
+    {
+        List<string> res = (List<string>) RestoreIPAddress.Run("102345");
+        Assert.Equal(9, res.Count);
+    }
 }

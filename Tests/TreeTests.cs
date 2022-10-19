@@ -26,6 +26,52 @@ public class TreeTests
         Assert.False(result1);
         Assert.True(result2);
     }
+    
+    [Fact]
+    public void PathSum_Success_1()
+    {
+        BinaryTree bt = new()
+        {
+            Value = 1,
+            Left =  new BinaryTree
+            {
+                Value = 2,
+                Left = null,
+                Right = null
+            },
+            Right = new BinaryTree
+            {
+                Value = 2,
+                Left = null,
+                Right = null
+            }
+        };
+        IList<IList<int>> result = PathSum.GetOptionsRecursive(bt, 3);
+        Assert.Equal(2, result.Count);
+    }
+    
+    [Fact]
+    public void PathSum_Success_2()
+    {
+        BinaryTree bt = new()
+        {
+            Value = 1,
+            Left =  new BinaryTree
+            {
+                Value = 2,
+                Left = null,
+                Right = null
+            },
+            Right = new BinaryTree
+            {
+                Value = 2,
+                Left = null,
+                Right = null
+            }
+        };
+        IList<IList<int>> result = PathSum.GetOptionsDFS(bt, 3);
+        Assert.Equal(2, result.Count);
+    }
 
     [Fact]
     public void TreeTraversal_Success()
@@ -104,10 +150,10 @@ public class TreeTests
         {
             new[] {1, 1},
             new[] {1, 1}
-      });
+        });
         Assert.Equal(8, perimeter);
     }
-    
+
     [Fact]
     public void CourseSchedule_Success()
     {
@@ -124,7 +170,7 @@ public class TreeTests
         });
         Assert.False(res);
     }
-    
+
     [Fact]
     public void CourseSchedule_Success_2()
     {
@@ -134,7 +180,7 @@ public class TreeTests
         });
         Assert.True(res);
     }
-    
+
     [Fact]
     public void RoomVisitor_Success_1()
     {
@@ -142,13 +188,13 @@ public class TreeTests
         {
             new List<int> {1},
             new List<int> {2},
-            new List<int>{3},
-            new List<int>{0}
+            new List<int> {3},
+            new List<int> {0}
         };
         bool res = RoomVisitor.Check(rooms);
         Assert.True(res);
     }
-    
+
     [Fact]
     public void RoomVisitor_Success_2()
     {
@@ -156,10 +202,27 @@ public class TreeTests
         {
             new List<int> {1, 3},
             new List<int> {3, 0, 1},
-            new List<int>{2},
-            new List<int>{0}
+            new List<int> {2},
+            new List<int> {0}
         };
         bool res = RoomVisitor.Check(rooms);
         Assert.False(res);
+    }
+
+    [Fact]
+    public void InfectionSequences_Success()
+    {
+        int count = InfectionSequences.GetCount(6, new[] {3, 5});
+        Assert.Equal(6, count);
+    }
+
+    [Fact]
+    public void FlightDependencies_Success()
+    {
+        List<int> count = FlightDependencies.CountDelayedFlights(4,
+            new List<int> {4, 3},
+            new List<int> {1, 2},
+            new List<int> {1, 3});
+        Assert.Equal(new List<int> {1, 3, 4}, count);
     }
 }

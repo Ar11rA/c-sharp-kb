@@ -103,4 +103,11 @@ public class StringTests
         res = ZigZagConversion.Convert("PAYPALISHIRING", 4);
         Assert.Equal("PINALSIGYAHRPI", res);
     }
+    
+    [Fact]
+    public void DnaSequence_Success()
+    {
+        List<string> res = (List<string>) DnaSequence.Find("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT");
+        Assert.Equal(2, res.Count);
+    }
 }

@@ -203,4 +203,114 @@ public class DpRecursionTests
         result = HouseRobber.RobDPCircle(new[] {2, 1, 1, 2});
         Assert.Equal(3, result);
     }
+
+    [Fact]
+    public void CoinGame_Success()
+    {
+        int result = CoinGame.Calculate(new[] {1, 2, 5}, 11);
+        Assert.Equal(3, result);
+        result = CoinGame.Calculate(new[] {2}, 3);
+        Assert.Equal(-1, result);
+        result = CoinGame.Calculate(new[] {1}, 0);
+        Assert.Equal(0, result);
+        result = CoinGame.Calculate(new[] {2, 5, 10, 1}, 27);
+        Assert.Equal(4, result);
+        result = CoinGame.Calculate(new[] {186, 419, 83, 408}, 6249);
+        Assert.Equal(4, result);
+    }
+    
+    [Fact]
+    public void CoinGame_SuccessDP()
+    {
+        int result = CoinGame.CalculateDP(new[] {1, 2, 5}, 11);
+        Assert.Equal(3, result);
+        result = CoinGame.CalculateDP(new[] {2}, 3);
+        Assert.Equal(-1, result);
+        result = CoinGame.CalculateDP(new[] {1}, 0);
+        Assert.Equal(0, result);
+        result = CoinGame.CalculateDP(new[] {2, 5, 10, 1}, 27);
+        Assert.Equal(4, result);
+        result = CoinGame.CalculateDP(new[] {186, 419, 83, 408}, 6249);
+        Assert.Equal(20, result);
+    }
+
+    [Fact]
+    public void Triangle_Success_1()
+    {
+        List<IList<int>> triangle = new()
+        {
+            new List<int> {2},
+            new List<int> {3, 4},
+            new List<int> {6, 5, 7},
+            new List<int> {4, 1, 8, 3}
+        };
+        int result = Triangle.MinimumTotal(triangle);
+        Assert.Equal(11, result);
+    }
+
+    [Fact]
+    public void Triangle_Success_2()
+    {
+        List<IList<int>> triangle = new()
+        {
+            new List<int> {-1},
+            new List<int> {2, 3},
+            new List<int> {1, -1, -3}
+        };
+        int result = Triangle.MinimumTotal(triangle);
+        Assert.Equal(-1, result);
+    }
+
+    [Fact]
+    public void Triangle_Success_3()
+    {
+        List<IList<int>> triangle = new()
+        {
+            new List<int> {2},
+            new List<int> {3, 4},
+            new List<int> {6, 5, 7},
+            new List<int> {4, 1, 8, 3}
+        };
+        int result = Triangle.MinimumTotalRecursive(triangle);
+        Assert.Equal(11, result);
+    }
+
+    [Fact]
+    public void Triangle_Success_4()
+    {
+        List<IList<int>> triangle = new()
+        {
+            new List<int> {-1},
+            new List<int> {2, 3},
+            new List<int> {1, -1, -3}
+        };
+        int result = Triangle.MinimumTotalRecursive(triangle);
+        Assert.Equal(-1, result);
+    }
+
+    [Fact]
+    public void MaxPathSum_Success_1()
+    {
+        List<List<int>> board = new()
+        {
+            new List<int> {1, 2, 3, 4},
+            new List<int> {5, 6, 7, 8},
+            new List<int> {9, 10, 15, 12}
+        };
+        int result = MaxPathSum.Run(board, 2, 2);
+        Assert.Equal(27, result);
+    }
+
+    [Fact]
+    public void MaxPathSum_Success_2()
+    {
+        List<List<int>> board = new()
+        {
+            new List<int> {9, 4, 7},
+            new List<int> {2, 1, 3},
+            new List<int> {1, 4, 2}
+        };
+        int result = MaxPathSum.Run(board, 2, 1);
+        Assert.Equal(15, result);
+    }
 }
