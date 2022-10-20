@@ -68,6 +68,6 @@ public class MathTests
     public void RestoreIPAddress_Success()
     {
         List<string> res = (List<string>) RestoreIPAddress.Run("102345");
-        Assert.Equal(9, res.Count);
+        Assert.Equal(6, res.Count);
     }
 }
