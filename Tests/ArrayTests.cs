@@ -70,4 +70,46 @@ public class ArrayTests
         );
         Assert.Equal(6, res);
     }
+
+
+    [Fact]
+    public void Backtracking_Subsets_Success()
+    {
+        IList<IList<int>> res = Backtracking.Subsets(
+            new[] {1, 2, 3}
+        );
+        Assert.Equal(8, res.Count);
+    }
+
+    [Fact]
+    public void Backtracking_Permute_Success()
+    {
+        IList<IList<int>> res = Backtracking.Permute(
+            new[] {1, 2, 3}
+        );
+        Assert.Equal(6, res.Count);
+    }
+
+    [Fact]
+    public void Backtracking_CombinationSum_Success()
+    {
+        IList<IList<int>> res = Backtracking.CombinationSum(
+            new[] {2, 3, 6, 7}, 7
+        );
+        Assert.Equal(2, res.Count);
+    }
+
+    [Fact]
+    public void RotateMatrix_Success()
+    {
+        int[][] m =
+        {
+            new[] {1, 2, 3},
+            new[] {4, 5, 6},
+            new[] {7, 8, 9}
+        };
+
+        RotateMatrix.Perform90(m);
+        Assert.Equal(7, m[0][0]);
+    }
 }

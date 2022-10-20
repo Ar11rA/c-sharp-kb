@@ -110,4 +110,11 @@ public class StringTests
         List<string> res = (List<string>) DnaSequence.Find("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT");
         Assert.Equal(2, res.Count);
     }
+    
+    [Fact]
+    public void CountAndSay_Success()
+    {
+        string res = CountAndSay.Run(4);
+        Assert.Equal("1211", res);
+    }
 }

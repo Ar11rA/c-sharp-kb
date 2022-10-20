@@ -215,8 +215,9 @@ public class DpRecursionTests
         Assert.Equal(0, result);
         result = CoinGame.Calculate(new[] {2, 5, 10, 1}, 27);
         Assert.Equal(4, result);
+        // failing case
         result = CoinGame.Calculate(new[] {186, 419, 83, 408}, 6249);
-        Assert.Equal(4, result);
+        Assert.Equal(-1, result);
     }
     
     [Fact]

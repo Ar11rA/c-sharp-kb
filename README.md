@@ -4,13 +4,19 @@
   - LinqExample.cs - All LINQ related code examples.
   - CustomerReader.cs - How to add C# embedded resources and read them.
   - MappingExample.cs - Map between 2 DTOs using Automapper.
-- Competitive coding - General examples
+- Competitive coding - General examples- 
   - CountPairs.cs - https://www.geeksforgeeks.org/count-pairs-difference-equal-k/
+  - Backtracking.cs
+    - https://leetcode.com/problems/subsets/
+    - https://leetcode.com/problems/permutations/
+    - https://leetcode.com/problems/combination-sum/
+    - LetterCombinations.cs - https://leetcode.com/problems/letter-combinations-of-a-phone-number
   - TreeTraversal.cs - https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/
     - DFS
     - BFS
   - DP
     - DecodeWays.cs - https://leetcode.com/problems/decode-ways/
+    - CoinGame.cs - https://leetcode.com/problems/coin-change
     - HouseRobber.cs
       - https://leetcode.com/problems/house-robber
       - https://leetcode.com/problems/house-robber-ii
@@ -21,6 +27,7 @@
       - Min cost - https://leetcode.com/problems/min-cost-climbing-stairs/
       - Climbing stairs - https://leetcode.com/problems/climbing-stairs/
       - Nth Tribonacci - https://leetcode.com/problems/n-th-tribonacci-number/
+    - MaxAreaContainer.cs - https://leetcode.com/problems/container-with-most-water
     - MaximalSquare.cs - https://leetcode.com/problems/maximal-square/
     - UniquePaths.cs
       - W/O obstacle - https://leetcode.com/problems/unique-paths
@@ -38,7 +45,9 @@
     - IsPalindrome - https://leetcode.com/problems/palindrome-linked-list/
     - Swap nodes - https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
   - MinimumRotatedSortedArray.cs - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-  - SpiralMatrix.cs - https://leetcode.com/problems/spiral-matrix/
+  - Matrix
+    - SpiralMatrix.cs - https://leetcode.com/problems/spiral-matrix/
+    - RotateMatrix.cs - https://leetcode.com/problems/rotate-image/
   - DSAExamples.cs
     - Stack - https://leetcode.com/problems/valid-parentheses/
     - Queue - https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
@@ -65,14 +74,13 @@
     - Add binary numbers - https://leetcode.com/problems/add-binary/
   - SquareRoot.cs - https://leetcode.com/problems/sqrtx/
   - DiscountParser.cs - https://leetcode.com/problems/apply-discount-to-prices
-  - LetterCombinations.cs - https://leetcode.com/problems/letter-combinations-of-a-phone-number
-  - MaxAreaContainer.cs - https://leetcode.com/problems/container-with-most-water
   - MaximumSubarray.cs - https://leetcode.com/problems/maximum-subarray/
-  - AllPaths.cs - https://leetcode.com/problems/all-paths-from-source-to-target/
-  - CourseSchedule.cs - https://leetcode.com/problems/course-schedule/
-  - FloodFill.cs - https://leetcode.com/problems/flood-fill/
-  - IslandPerimeter.cs - https://leetcode.com/problems/island-perimeter/
-  - RottingOranges.cs - https://leetcode.com/problems/rotting-oranges/
+  - Traversal based questions
+    - AllPaths.cs - https://leetcode.com/problems/all-paths-from-source-to-target/
+    - CourseSchedule.cs - https://leetcode.com/problems/course-schedule/
+    - FloodFill.cs - https://leetcode.com/problems/flood-fill/
+    - IslandPerimeter.cs - https://leetcode.com/problems/island-perimeter/
+    - RottingOranges.cs - https://leetcode.com/problems/rotting-oranges/
 - OOPS Design Questions
   - Twitter - https://leetcode.com/problems/design-twitter
   - ATM Machine - https://leetcode.com/problems/design-an-atm-machine/
